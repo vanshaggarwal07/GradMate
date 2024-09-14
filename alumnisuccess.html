@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Success Stories</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        header {
+            background-color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 28px;
+            color: #333;
+            margin: 0;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #007bff;
+        }
+
+        header .button {
+            background-color: #3c9df1;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        header .button:hover {
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #333;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 30px;
+            border: 3px solid #ffdd57;
+        }
+
+        .profile-info {
+            flex-grow: 1;
+        }
+
+        .profile-info h3 {
+            font-size: 24px;
+            margin: 0 0 5px;
+            color: #333;
+        }
+
+        .profile-info p {
+            color: #007bff;
+            margin: 0 0 15px;
+            font-size: 16px;
+        }
+
+        .profile-info button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .profile-info button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+            margin-top: 50px;
+            font-size: 14px;
+            border-top: 1px solid #ddd;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile img {
+                margin-bottom: 20px;
+            }
+
+            header {
+                flex-direction: column;
+            }
+
+            header nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>GradMate</h1>
+        <nav>
+            <a class="text-[#0d151c] text-sm font-medium leading-normal" href="home.html">Home</a>
+              <a class="text-[#0d151c] text-sm font-medium leading-normal" href="network.html">Network</a>
+            
+              <a class="text-[#0d151c] text-sm font-medium leading-normal" href="glimpse.html">Feedback</a>
+              <a class="text-[#0d151c] text-sm font-medium leading-normal" href="about.html">About</a>
+              <a class="text-[#0d151c] text-sm font-medium leading-normal" href="#">Contact us</a>
+            <button class="button"><a href="Signup.html" class="nav-link">Sign Out</a></button>
+        </nav>
+        
+    </header>
+
+    <div class="container">
+        <h2>Alumni Success Stories</h2>
+        <section>
+            <div class="profile">
+                <img src="7.jpg" alt="Jill Smith">
+                <div class="profile-info">
+                    <h3>Vansh Aggarwal</h3>
+                    <p>SDE III @ Google</p>
+                    <button>View Profile</button>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="2.jpg" alt="John Doe">
+                <div class="profile-info">
+                    <h3>Sakshi Arora</h3>
+                    <p>Software Engineer at Meta</p>
+                    <button>View Profile</button>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="3.jpg" alt="Jane Doe">
+                <div class="profile-info">
+                    <h3>Sushant Singh</h3>
+                    <p>Product Manager at Facebook</p>
+                    <button>View Profile</button>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="9.jpg" alt="Jack Smith">
+                <div class="profile-info">
+                    <h3>Ria Gupta</h3>
+                    <p>Investment Analyst at JP Morgan</p>
+                    <button>View Profile</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Assist - Glimpse</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #F8FAFC;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: white;
+            padding: 15px 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header input[type="text"] {
+            padding: 10px 15px;
+            border-radius: 50px;
+            border: 1px solid #ccc;
+            width: 300px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            margin-left: 20px;
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .testimonial {
+            display: flex;
+            align-items: flex-start;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .testimonial-content {
+            flex-grow: 1;
+        }
+
+        .testimonial-content h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .testimonial-content small {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .testimonial-content p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .rating {
+            font-size: 16px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        @media (max-width: 768px) {
+            header input[type="text"] {
+                width: 100%;
+            }
+
+            .testimonial {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .testimonial img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <input type="text" placeholder="Search">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Students</a>
+            <a href="#">Mentors</a>
+            <a href="#">Glimpse</a>
+            <a href="#">FAQ</a>
+            <button class="button">Become a Mentor</button>
+            <img class="profile-pic" src="https://via.placeholder.com/40" alt="Profile Picture">
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Glimpse</h1>
+        <p class="subtitle">See the impact of your help, as rated by the students you've assisted</p>
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/60" alt="Jenny">
+            <div class="testimonial-content">
+                <h3>Very helpful and knowledgeable</h3>
+                <small>Jenny, 21</small>
+                <p>I had a great experience with the alumni mentor. They provided valuable insights and guidance, which helped me in my career journey. I highly recommend their mentorship.</p>
+            </div>
+            <div class="rating">5/5</div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/60" alt="Michael">
+            <div class="testimonial-content">
+                <h3>Great advice, very encouraging</h3>
+                <small>Michael, 22</small>
+                <p>The mentor was very supportive and provided me with the right guidance. Their experience and knowledge were invaluable. I would definitely recommend them as a mentor.</p>
+            </div>
+            <div class="rating">5/5</div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/60" alt="Emily">
+            <div class="testimonial-content">
+                <h3>Really inspiring, gave me great ideas</h3>
+                <small>Emily, 20</small>
+                <p>The mentor's insights were truly inspiring. They helped me think outside the box and provided me with creative solutions. I would highly recommend their mentorship.</p>
+            </div>
+            <div class="rating">5/5</div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/60" alt="Sam">
+            <div class="testimonial-content">
+                <h3>Very useful, answered all my questions</h3>
+                <small>Sam, 19</small>
+                <p>The mentor was very helpful and patient. They answered all my questions and provided me with the right guidance. I would definitely recommend their mentorship.</p>
+            </div>
+            <div class="rating">5/5</div>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/60" alt="Stephanie">
+            <div class="testimonial-content">
+                <h3>Extremely helpful, I learned a lot</h3>
+                <small>Stephanie, 23</small>
+                <p>The mentor's experience and insights were invaluable. They helped me learn and grow in my career. I would highly recommend their mentorship.</p>
+            </div>
+            <div class="rating">5/5</div>
+        </div>
+    </div>
+
+</body>
+</html>
